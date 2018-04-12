@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="myApp">
+
+<!--Attribute  -->
+<div w3-test-directive></div>
+
+<script>
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        restrict : "A",
+        template : "<h1>Made by a directive-10!</h1>"
+    };
+});
+</script>
+<!-- directive: w3-test-directive -->
+The legal restrict values are:
+
+E for Element name
+A for Attribute
+C for Class
+M for Comment
+</body>
+</html>
